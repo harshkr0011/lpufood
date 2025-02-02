@@ -1,0 +1,14 @@
+{
+    "name": "food-del",
+    "version": "1.0.0",
+    "scripts": {
+        "build": "npm run build-frontend && npm run build-admin && npm run build-backend && npm run merge-builds",
+        "build-frontend": "cd frontend && npm install && npm run build",
+        "build-admin": "cd admin && npm install && npm run build",
+        "build-backend": "cd backend && npm install",
+        "merge-builds": "node scripts/mergeBuilds.js"
+    },
+    "devDependencies": {
+        "ncp": "^2.0.0"
+    }
+}
